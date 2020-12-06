@@ -9,10 +9,31 @@
     padding: 10px;
 }
 
+/* add bg image */
 body {
     background: url('../img/geometry10-03-03-01.jpg') repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
     }
+
+/* styling classes*/
+.underline {
+    border-bottom: 2px solid #97d8c4;
+}
+
+
+/* style to define boxes containing text*/
+.text-box {
+    float: left;
+}
+
+.text-box h1 {
+    color: #4059ad;
+}
+
+.text-box xyz {
+    background-color: #eff2f1;
+    padding: 25px;
+}
