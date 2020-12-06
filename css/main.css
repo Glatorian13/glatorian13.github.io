@@ -2,7 +2,7 @@
 
 /* nab bar edits to bootstrap css*/
 .navbar-brand.nav-brand-custom {
-    border-radius: 10%;
+    border-radius: 5px;
     background-color: #4059ad;
     color: #eff2f1;
     font-size: 20px;
@@ -23,17 +23,24 @@ body {
     border-bottom: 2px solid #97d8c4;
 }
 
+.custom-img-500 {
+    width: 50%;
+    height: auto;
+    padding: 25px;
+}
 
 /* style to define boxes containing text*/
 .text-box {
-    float: left;
+    border-radius: 10px;
+    background-color: #eff2f1;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .text-box h1 {
     color: #4059ad;
 }
 
-.text-box xyz {
-    background-color: #eff2f1;
-    padding: 25px;
+.text-box p {
+   padding:10px;
 }
