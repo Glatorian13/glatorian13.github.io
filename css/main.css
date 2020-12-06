@@ -8,3 +8,11 @@
     font-size: 20px;
     padding: 10px;
 }
+
+body {
+    background: url('../img/geometry10-03-03-01.jpg') repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    }
