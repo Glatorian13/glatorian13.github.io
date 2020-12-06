@@ -3,7 +3,7 @@
 /* nab bar edits to bootstrap css*/
 .navbar-brand.nav-brand-custom {
     border-radius: 5px;
-    background-color: #4059ad;
+    background-color: #6b9ac4;
     color: #eff2f1;
     font-size: 20px;
     padding: 10px;
@@ -43,4 +43,14 @@ body {
 
 .text-box p {
    padding:10px;
+}
+
+.footer {
+    height:50px;
+    margin-top: -50px;
+    background-color: #6b9ac4;
+}
+
+.footer p {
+color: #eff2f1;
 }
