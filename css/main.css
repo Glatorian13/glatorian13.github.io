@@ -1,0 +1,10 @@
+
+
+/* nab bar edits to bootstrap css*/
+.navbar-brand.nav-brand-custom {
+    border-radius: 10%;
+    background-color: #4059ad;
+    color: #eff2f1;
+    font-size: 20px;
+    padding: 10px;
+}
