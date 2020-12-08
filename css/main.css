@@ -46,6 +46,12 @@ body {
    padding:10px;
 }
 
+form .btn-primary {
+    background-color: #6b9ac3;
+    border-color: #6b9ac3;
+    font: #eff2f1;
+}
+
 .footer {
     height:50px;
     margin-top: -50px;
