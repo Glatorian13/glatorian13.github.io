@@ -1,8 +1,15 @@
 import React from "react";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 import "./style.css";
 
 export default function Footer() {
   return (
+      <Router>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand nav-brand-custom" href=".">Javier</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -23,5 +30,6 @@ export default function Footer() {
             </ul>
         </div>
     </nav>
+    </Router>
   );
 }
