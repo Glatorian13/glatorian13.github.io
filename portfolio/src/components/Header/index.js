@@ -9,7 +9,7 @@ import {
 import "./style.css";
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 
-export default function Footer() {
+export default function Header() {
   return (
       <Router>
     <Navbar expand="lg" variant="light" bg="light">

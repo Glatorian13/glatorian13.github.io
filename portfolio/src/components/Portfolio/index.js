@@ -1,24 +1,30 @@
-import React from "react";
-import {
-  Card,
-  Button,
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardText,
-  CardImg,
-} from "reactstrap";
-import "./style.css";
+import React from 'react';
 
-export default function Portfolio(props) {
+import portfolioConfig from '../assests/json/portfolioConfig.js'
+
+export default function Portfolio() {
+  let loadFile = this.props.portfolioConfig;
   return (
-    <div classname="Portfolio">
-      <Card>
-        <CardImg top width="100%" src={props.img} alt={props.name} />
-        <CardTitle>{props.name}</CardTitle>
-        <CardText>{props.description}</CardText>
-        <Button></Button>
-      </Card>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 text-box float-left">
+                <h1 class="underline">
+                    Portfolio
+                </h1>
+                <img src={loadFile.portfolio.img} class="custom-img-500 img-fluid float-left"
+                    alt="placeholder"> </img>
+                <img src="../glatorian13.github.io/img/500x500.png" class="custom-img-500 img-fluid float-left"
+                    alt="placeholder"> </img>
+                <img src="../glatorian13.github.io/img/500x500.png" class="custom-img-500 img-fluid float-left"
+                    alt="placeholder"> </img>
+                <img src="../glatorian13.github.io/img/500x500.png" class="custom-img-500 img-fluid float-left"
+                    alt="placeholder"> </img>
+                <img src="../glatorian13.github.io/img/500x500.png" class="custom-img-500 img-fluid float-left"
+                    alt="placeholder"> </img>
+                <img src="../glatorian13.github.io/img/500x500.png" class="custom-img-500 img-fluid float-left"
+                    alt="placeholder"> </img>
     </div>
-  );
+    </div>
+    </div>
+  )
 }
