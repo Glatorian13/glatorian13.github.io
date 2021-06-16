@@ -1,60 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+//import Wrapper from "../components/Wrapper";
+import { Col, Row, Container } from "../components/Grid";
+import portfolioConfig from "../assets/json/portfolioConfig.json";
+import PortfolioCard from "../components/PortfolioCard";
 
-import portfolioConfig from "../assests/json/portfolioConfig.js";
+function Portfolio() {
+  const [myProjects, setmyProjects] = useState([]);
 
-const Portfolio = (props) => {
-  let loadFile = this.props.portfolioConfig;
+  useEffect(() => {
+    loadmyProjects();
+  }, []);
+
+  function loadmyProjects() {
+    setmyProjects(portfolioConfig);
+  }
+
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9 text-box float-left">
-          <h1 class="underline">Portfolio</h1>
-          <img
-            src={loadFile.portfolio.img}
-            class="custom-img-500 img-fluid float-left"
-            alt="placeholder"
-          >
-            {" "}
-          </img>
-          <img
-            src="../glatorian13.github.io/img/500x500.png"
-            class="custom-img-500 img-fluid float-left"
-            alt="placeholder"
-          >
-            {" "}
-          </img>
-          <img
-            src="../glatorian13.github.io/img/500x500.png"
-            class="custom-img-500 img-fluid float-left"
-            alt="placeholder"
-          >
-            {" "}
-          </img>
-          <img
-            src="../glatorian13.github.io/img/500x500.png"
-            class="custom-img-500 img-fluid float-left"
-            alt="placeholder"
-          >
-            {" "}
-          </img>
-          <img
-            src="../glatorian13.github.io/img/500x500.png"
-            class="custom-img-500 img-fluid float-left"
-            alt="placeholder"
-          >
-            {" "}
-          </img>
-          <img
-            src="../glatorian13.github.io/img/500x500.png"
-            class="custom-img-500 img-fluid float-left"
-            alt="placeholder"
-          >
-            {" "}
-          </img>
-        </div>
-      </div>
-    </div>
+    <Container>
+      <h1 className="underline">Portfolio</h1>
+      <Row>
+        {myProjects.map((project) => (
+          <Col size="md-6" className="project-col">
+            <PortfolioCard
+              key={project.id}
+              name={project.name}
+              img={project.img}
+              imgLink={project.imgLink}
+              repositoryLink={project.repositoryLink}
+              deployLink={project.deployLink}
+              description={project.description}
+              />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
-};
+}
 
 export default Portfolio;
