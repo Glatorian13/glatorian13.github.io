@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* style={{
+  backgroundImage: `url('../img/geometry10-03-03-01.jpg')`,
+  backgroundRepeat: 'repeat',
+  backgroundPosition: 'center',
+  backgroundSize: 'contain',
+  WebkitBackgroundSize: 'contain',
+
+}} */
